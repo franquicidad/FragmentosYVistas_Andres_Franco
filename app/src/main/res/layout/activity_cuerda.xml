@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/descripcion"
+        android:text="@string/descuerda"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagenCuerda1"
+            android:layout_width="0dp"
+            android:src="@drawable/guitarraacus"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/imagenCuerda2"
+            android:layout_width="0dp"
+            android:src="@drawable/violin"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/favoritoguitarra"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tint="@color/ColorBotones"
+            app:srcCompat="@android:drawable/btn_star"
+            />
+        <ImageButton
+            android:id="@+id/playguitarra"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:tint="@color/ColorBotones"
+            app:srcCompat="@android:drawable/ic_media_play"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/violinfavorito"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/btn_star"
+            android:layout_weight="1"
+            android:tint="@color/ColorBotones"
+            />
+        <ImageButton
+            android:id="@+id/playviolin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_media_play"
+            android:layout_weight="1"
+            android:tint="@color/ColorBotones"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="90dp"
+            android:text="Facultad de artes"
+            android:textStyle="bold"
+            android:textSize="27sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="23sp"
+            android:paddingLeft="108dp"
+            android:text="www.fsartes.com"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
